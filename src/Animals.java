@@ -1,9 +1,10 @@
 public class Animals {
-
+    private static int totalAnimals = 0;
     private String animalName;
 
     public Animals(String animalName) {
         this.animalName = animalName;
+        totalAnimals++;
     }
 
     public void run(int barrier) {
@@ -20,5 +21,9 @@ public class Animals {
 
     public void setAnimalName(String animalName) {
         this.animalName = animalName;
+    }
+
+    public static int getTotalAnimalsCount() {
+        return totalAnimals;
     }
 }
