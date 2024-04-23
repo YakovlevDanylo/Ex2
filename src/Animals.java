@@ -13,4 +13,12 @@ public class Animals {
     public void swim(int barrier) {
         System.out.println(this.animalName + " проблив " + barrier + " м.");
     }
+
+    public String getAnimalName() {
+        return animalName;
+    }
+
+    public void setAnimalName(String animalName) {
+        this.animalName = animalName;
+    }
 }
